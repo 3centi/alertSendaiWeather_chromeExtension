@@ -1,0 +1,18 @@
+{
+    "name":"alart Sendai weather",
+    "description":"google検索をすると仙台の天気をアラートで教えてくれる拡張機能。使用APIは「天気予報API」。主に気象庁が提供している天気予報を使用。",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "js": [
+          "app.js"
+        ]
+      }],
+      "icons":{
+        "16":"icons/weatherIcon16.png",
+        "48":"icons/weatherIcon48.png",
+        "128":"icons/weatherIcon128.png"
+      },
+      "author":"3centi"
+}
